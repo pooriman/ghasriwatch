@@ -5,48 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ghasri Watch</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="manifest" href="manifest.json">
 </head>
-
-<script>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js").then(() => {
-      console.log("Service Worker Registered");
-    });
-  }
-</script>
-
 <body>
-  <header>
-    
-<h1>داشبورد حسابداری قاصری واچ</h1>
+  <h1>داشبورد حسابداری قاصری واچ</h1>
 
-<h2>افزودن مشتری</h2>
-<form id="customerForm">
-  <label>کد مشتری:</label><br>
-  <input type="text" id="customerCode" required><br><br>
+  <h2>افزودن مشتری</h2>
+  <form id="customerForm">
+    <label>کد مشتری:</label><br>
+    <input type="text" id="customerCode" required><br><br>
 
-  <label>نام مشتری:</label><br>
-  <input type="text" id="customerName" required><br><br>
+    <label>نام مشتری:</label><br>
+    <input type="text" id="customerName" required><br><br>
 
-  <label>شماره تماس:</label><br>
-  <input type="text" id="customerPhone"><br><br>
+    <label>شماره تماس:</label><br>
+    <input type="text" id="customerPhone"><br><br>
 
-  <label>آدرس:</label><br>
-  <input type="text" id="customerAddress"><br><br>
+    <label>آدرس:</label><br>
+    <input type="text" id="customerAddress"><br><br>
 
-  <label>مانده حساب اولیه (ریال):</label><br>
-  <input type="number" id="customerBalance"><br><br>
+    <label>مانده حساب اولیه (ریال):</label><br>
+    <input type="number" id="customerBalance"><br><br>
 
-  <button type="submit">ذخیره مشتری</button>
-</form>
+    <button type="submit">ذخیره مشتری</button>
+  </form>
 
-<hr>
-<h3>لیست مشتری‌ها:</h3>
-<ul id="customerList"></ul>
-  </header>
-
-  
+  <hr>
+  <h3>لیست مشتری‌ها:</h3>
+  <ul id="customerList"></ul>
 
   <script src="app.js"></script>
 </body>
