@@ -8,9 +8,10 @@ document.getElementById("customerForm").addEventListener("submit", function (e) 
   const balance = parseInt(document.getElementById("customerBalance").value) || 0;
 
   const customer = { code, name, phone, address, balance };
-  
+
   let customers = JSON.parse(localStorage.getItem("customers")) || [];
 
+  // بررسی تکراری نبودن کد مشتری
   if (customers.find(c => c.code === code)) {
     alert("کد مشتری تکراری است!");
     return;
