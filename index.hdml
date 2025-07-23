@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ghasri Watch</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header>
+    <h1>داشبورد حسابداری قاصری واچ</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>ورود اطلاعات مشتری</h2>
+      <input type="text" placeholder="نام مشتری" />
+      <input type="text" placeholder="شماره موبایل" />
+      <button>ثبت</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
