@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.json">
 </head>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js").then(() => {
+      console.log("Service Worker Registered");
+    });
+  }
+</script>
+
 <body>
   <header>
     <h1>داشبورد حسابداری قاصری واچ</h1>
