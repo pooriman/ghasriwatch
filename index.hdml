@@ -46,14 +46,7 @@
 <ul id="customerList"></ul>
   </header>
 
-  <main>
-    <section>
-      <h2>ورود اطلاعات مشتری</h2>
-      <input type="text" placeholder="نام مشتری" />
-      <input type="text" placeholder="شماره موبایل" />
-      <button>ثبت</button>
-    </section>
-  </main>
+  
 
   <script src="app.js"></script>
 </body>
